@@ -1,0 +1,44 @@
+doctype
+html
+  head
+    include layout/head.pug
+    title MW.CSS | Report
+  body
+    - var active = 'report'
+    
+    include layout/navbar.pug
+    
+    div(class="main collapse collapse-w margin-1 space-22" style="display: block; margin-bottom: 20px;")
+      div(class="txt-center")
+        div.report
+          div.h1 Report a Bug
+          br
+          form(method="post" action="data/report.php")
+            div(class="left margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Name.." name="name" type="text" required)
+              br
+              input(class="input input-w space-24" placeholder="Email.." name="email" type="email" required)
+              
+            div(class="right margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Bug Type.." name="type" type="text" required)
+              br
+              textarea(class="input input-w space-24" placeholder="Description.." name="desc" required style="resize: vertical;")
+            button(class="btn btn-outline-green margin-3 space-18" type="submit") Send
+          
+          div.clearfix
+          
+          div(class="h1" id="vote") Vote To Release
+          br
+          form(method="post" action="data/vote.php")
+            div(class="left margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Name.." name="name" type="text" required)
+              br
+              input(class="input input-w space-24" placeholder="Email.." name="email" type="email" required)
+              
+            div(class="right margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Opinion" name="opin" type="text" required)
+              br
+              textarea(class="input input-w space-24" required readonly style="resize: vertical;") By Clicking Vote you agree to release the current MW.CSS version to become a version and be out of Beta mode.
+            button(class="btn btn-outline-green margin-3 space-18" type="submit") Vote
+            
+    include layout/footer.pug

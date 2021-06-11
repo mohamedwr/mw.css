@@ -1,0 +1,67 @@
+doctype
+html
+  head
+    include layout/head.pug
+    title MW.CSS | About us
+  body
+    - var active = 'about'
+    
+    include layout/navbar.pug
+    
+    div(class="main collapse collapse-w margin-1 space-22" style="display: block; margin-bottom: 20px;")
+      div(class="txt-center")
+        div.me
+          div.h1 About the developer
+          br
+          img(src="images/me.jpg" class="space-esmall-22 margin-esmall-1")
+          div.clearfix
+          div.h4
+            p I am Mohammed Waleed
+            p A Front-end and Back-end Developer
+            p I am 13 years old
+            p I am From Egypt, El-Fayoum
+            p I am studying at Future Language School
+            
+        br  
+        
+        div(class="links clearfix h1") Social Media
+          br
+          a(href="https://www.facebook.com/mohammed.rady.1293" target="_blank" class="link-blue") Facebook
+          
+        br
+        
+        div.skills
+          div.h1 Skills
+          br
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-blue txt-white" style="margin-bottom: 10px;") Html
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-gray txt-white" style="margin-bottom: 10px;") Css
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-green txt-white" style="margin-bottom: 10px;") Javascript
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-red txt-white" style="margin-bottom: 10px;") Php
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-cyan txt-white" style="margin-bottom: 10px;") MySql
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-pink txt-white" style="margin-bottom: 10px;") Sass
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-orange txt-white" style="margin-bottom: 10px;") Pugjs
+          div(class="space-5 space-esmall-11 margin-1 h3 bg-purple txt-white" style="margin-bottom: 10px;") C#
+        
+        br
+        
+        div.contact
+          div(class="h1" id="contact") Contact us
+          br
+          form(method="post" action="data/contact.php")
+            div(class="left margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Name.." name="name" type="text" required)
+              br
+              input(class="input input-w space-24" placeholder="Email.." name="email" type="email" required)
+              
+            div(class="right margin-2 space-20")
+              input(class="input input-w space-24" placeholder="Title.." name="title" type="text" required)
+              br
+              textarea(class="input input-w space-24" placeholder="Message.." name="msg" required style="resize: vertical;")
+            button(class="btn btn-outline-green margin-3 space-18" type="submit") Send
+            
+        div.clearfix
+        br
+        
+        a(href="admin.php" class="link-blue") Control
+    
+    include layout/footer.pug

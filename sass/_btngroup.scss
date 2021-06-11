@@ -1,0 +1,16 @@
+.btn-group{
+    display: inline-flex;
+    button{
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .first{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .last{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

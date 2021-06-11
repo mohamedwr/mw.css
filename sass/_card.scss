@@ -1,0 +1,64 @@
+.card-portait{
+    border: 1px #ddd solid;
+    display: inline-block;
+    text-align: $left;
+    max-width: 300px;
+    img{
+        width: 100%;
+    }
+    .content{
+        h3{
+            margin: 10px;
+            font-size: 25px;
+            font-weight: normal;
+        }
+        .desc{
+            margin: 10px;
+            margin-bottom: 0;
+            font-size: 18px;
+        }
+        button{
+            margin: 10px;
+            margin-top: 0;
+        }
+    }
+}
+
+.card-portait-b{
+    @extend .txt-white;
+    @extend .bg-black;
+}
+
+.card-portait-w{
+    @extend .txt-black;
+    @extend .bg-white;
+}
+
+.card-landscape{
+    border: 1px #ddd solid;
+    display: inline-block;
+    text-align: $left;
+    img{
+        float: $left;
+        margin-#{$right}: 10px;
+    }
+    .content{
+        padding: 10px;
+        display: inline-block;
+        h3{
+            font-size: 25px;
+            font-weight: normal;
+            display: inline-block;
+        }
+    }
+}
+
+.card-landscape-b{
+    @extend .txt-white;
+    @extend .bg-black;
+}
+
+.card-landscape-w{
+    @extend .txt-black;
+    @extend .bg-white;
+}

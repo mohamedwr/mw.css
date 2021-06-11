@@ -1,0 +1,1 @@
+sass --watch C:\xampp\htdocs\MW.CSS\sass:C:\xampp\htdocs\MW.CSS\css --style expanded

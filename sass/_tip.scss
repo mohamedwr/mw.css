@@ -1,0 +1,27 @@
+.has-tip{
+    &:hover{
+        .tip{
+            display: inline-block;
+        }
+    }
+}
+
+.tip{
+    display: none;
+    position: absolute;
+    margin: 0 15px;
+    padding: 5px 10px;
+    z-index: 99;
+    border-bottom-#{$left}-radius: 10px;
+    border-top-#{$left}-radius: 10px;
+}
+
+.tip-b{
+    @extend .bg-black;
+    @extend .txt-white;
+}
+
+.tip-w{
+    @extend .bg-white;
+    @extend .txt-black;
+}

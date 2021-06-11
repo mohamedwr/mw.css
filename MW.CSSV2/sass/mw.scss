@@ -1,0 +1,122 @@
+/* MW.CSS V1.0 -- By Mohammed Waleed */
+
+$left: right;
+$right: left;
+
+$rtl: ltr;
+$ltr: rtl;
+
+@if $left == left { *{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; } }
+
+@if $left == right { *{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; } }
+
+$blue: #007bff;
+$gray: #6c757d;
+$green: #28a745;
+$red: #dc3545;
+$yellow: #ffc107;
+$cyan: #17a2b8;
+$white: #f8f9fa;
+$black: #343a40;
+$pink: #c6538c;
+$orange: #F38630;
+$purple: #9B539C;
+$lemon: #B1EB00;
+
+$colors:(blue, $blue),
+        (gray, $gray),
+        (green, $green),
+        (red, $red),
+        (yellow, $yellow),
+        (cyan, $cyan),
+        (white, $white),
+        (black, $black),
+        (pink, $pink),
+        (orange, $orange),
+        (purple, $purple),
+        (lemon, $lemon);
+
+$headings:(1, 2em),
+          (2, 1.5em),
+          (3, 1.17em),
+          (4, 1em),
+          (5, 0.83em),
+          (6, 0.67em);
+
+@each $nu, $size in $headings{
+    .h#{$nu}{
+        font-size: $size;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-left{
+    text-align: left;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.container-full{
+    width: 100%;
+    margin: 0;
+}
+
+.container-mini{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+@import 'display';
+
+@import 'colors';
+
+@import 'grid';
+
+@import 'msg';
+
+@import 'breadcrumb';
+
+@import 'btn';
+
+@import 'btngroup';
+
+@import 'card';
+
+@import 'navbar';
+
+@import 'badge';
+
+@import 'post';
+
+@import 'collapse';
+
+@import 'dropdown';
+
+@import 'forms';
+
+@import 'inputgroup';
+
+@import 'tip';
+
+@import 'mediaquery';

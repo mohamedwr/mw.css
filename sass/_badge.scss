@@ -1,0 +1,15 @@
+.badge{
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 20px;
+}
+
+.badge-white{
+    @extend .bg-white;
+    @extend .txt-black;
+}
+
+.badge-black{
+    @extend .bg-black;
+    @extend .txt-white;
+}

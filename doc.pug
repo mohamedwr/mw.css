@@ -1,0 +1,989 @@
+doctype
+html
+  head
+    include layout/head.pug
+    title MW.CSS | DOC v1.0 beta
+  body
+    - var active ='doc'
+    include layout/navbar.pug
+    
+    div(class="margin-1 space-22")
+      main
+        div(class="collapse collapse-w" style="display: block;")
+        
+          // Start Colors
+          
+          a(href="#colors" id="colors" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Colors
+          br
+          br
+          div.h2 txt-Colors
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="txt-blue h1") .txt-blue
+              hr
+              | #{'<div class="txt-blue">.txt-blue</div>'}
+                
+            p.h5 You can cutomize txt-color
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="txt-green h1") .txt-green
+                hr
+                | #{'<div class="txt-green">.txt-green</div>'}
+                br
+                br
+                | .txt-blue / .txt-gray / .txt-red / .txt-green / .txt-yellow / .txt-cyan / .txt-white / .txt-black / .txt-pink / .txt-orange / .txt-purple / .txt-lemon
+          
+          hr
+          div.h2 Backgrounds
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="bg-blue h1") .bg-blue
+              hr
+              | #{'<div class="bg-blue">.bg-blue</div>'}
+                
+            p.h5 You can cutomize bg-color
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="bg-green h1") .bg-green
+                hr
+                | #{'<div class="bg-green">.bg-green</div>'}
+                br
+                br
+                | .bg-blue / .bg-gray / .bg-red / .bg-green / .bg-yellow / .bg-cyan / .bg-white / .bg-black / .bg-pink / .bg-orange / .bg-purple / .bg-lemon
+                
+          hr
+          div.h2 Outlines
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="outl-blue h1") .outl-blue
+              hr
+              | #{'<div class="outl-blue">.outl-blue</div>'}
+                
+            p.h5 You can cutomize outl-color
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="outl-green h1") .outl-green
+                hr
+                | #{'<div class="outl-green">.outl-green</div>'}
+                br
+                br
+                | .outl-blue / .outl-gray / .outl-red / .outl-green / .outl-yellow / .outl-cyan / .outl-white / .outl-black / .outl-pink / .outl-orange / .outl-purple / .outl-lemon
+                
+          // End Colors
+          
+          // Start Grid System
+          
+          a(href="#grid" id="grid" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Grid System
+          br
+          br
+          div.h2 Containers
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="container-full bg-blue h1") .container-full
+              hr
+              | #{'<div class="container-full bg-blue">.container-full</div>'}
+              
+            p.h5 You can cutomize text position (Right-Left-Center)
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="container-mini bg-blue h1") .container-mini
+                hr
+                | #{'<div class="container-mini bg-blue">.container-mini</div>'}
+          
+          hr
+          div.h2 Grid System
+            p.h5 Grid System is a way to divide your content horizontaly by simple way
+            p.h5 Grid System is divided into 24 pieces (1 to 24)
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="outl-blue h1 space-24") .space-24
+              div.clearfix
+              hr
+              | #{'<div class="space-24 outl-blue">.space-24</div>'}
+              
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="outl-blue h1 space-24") .space-24
+              div(class="outl-blue h1 space-12") .space-12
+              div(class="outl-blue h1 space-12") .space-12
+              div(class="outl-blue h1 space-6") .space-6
+              div(class="outl-blue h1 space-18") .space-18
+              div.clearfix
+              hr
+              | #{'<div class="space-24 outl-blue">.space-24</div>'}
+              br
+              br
+              | #{'<div class="space-12 outl-blue">.space-12</div>'}
+              br
+              br
+              | #{'<div class="space-12 outl-blue">.space-12</div>'}
+              br
+              br
+              | #{'<div class="space-6 outl-blue">.space-6</div>'}
+              br
+              br
+              | #{'<div class="space-18 outl-blue">.space-18</div>'}
+              
+            p.h5 You can add margin (1 to 24)
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="outl-blue h1 space-12") .space-12
+                div(class="outl-blue h1 space-6 margin-6") .space-6 - .margin-6
+                div.clearfix
+                hr
+                | #{'<div class="space-12 outl-blue">.space-12</div>'}
+                br
+                br
+                | #{'<div class="space-6 margin-1 outl-blue">.space-6 - .margin-6</div>'}
+            
+            p.h5 You can give a certain space in each media query
+            p.h5 .space-esmall-24 -> Extra Small
+            p.h5 .space-small-12 -> Small
+            p.h5 .space-medium-10 -> Medium
+            p.h5 .space-large-6 -> Large
+            p.h5 .space-elarge-3 -> Extra Large
+                
+          // End Grid System
+          
+          // Start Displays
+          
+          a(href="#displays" id="displays" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Displays
+          br
+          br
+          div.h2 Font size (.h1 to .h6)
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="h1") .h1
+              div(class="h2") .h2
+              div(class="h3") .h3
+              div(class="h4") .h4
+              div(class="h5") .h5
+              div(class="h6") .h6
+              hr
+              | #{'<div class="h1">.h1</div>'}
+              br
+              br
+              | #{'<div class="h1">.h2</div>'}
+              br
+              br
+              | #{'<div class="h1">.h3</div>'}
+              br
+              br
+              | #{'<div class="h1">.h4</div>'}
+              br
+              br
+              | #{'<div class="h1">.h5</div>'}
+              br
+              br
+              | #{'<div class="h1">.h6</div>'}
+          
+          hr
+          div.h2 Displays (none, block, inline, inline-block)
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="d-none h1") .d-none
+              div(class="d-inline h1") .d-inline
+              div(class="d-inlineb h1") .d-inlineb
+              div(class="d-block h1") .d-block
+              div.clearfix
+              hr
+              | #{'<div class="d-none">.d-none</div>'}
+              br
+              br
+              | #{'<div class="d-inline">.d-inline</div>'}
+              br
+              br
+              | #{'<div class="d-inlineb">.d-inlineb</div>'}
+              br
+              br
+              | #{'<div class="d-block">.d-block</div>'}
+              
+            p.h5 You can add margin (1 to 24)
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="outl-blue h1 space-12") .space-12
+                div(class="outl-blue h1 space-6 margin-6") .space-6 - .margin-6
+                div.clearfix
+                hr
+                | #{'<div class="space-12 outl-blue">.space-12</div>'}
+                br
+                br
+                | #{'<div class="space-6 margin-1 outl-blue">.space-6 - .margin-6</div>'}
+            
+            p.h5 You can give a certain display in each media query
+            p.h5 .esmall-d-block -> Extra Small
+            p.h5 .small-d-block -> Small
+            p.h5 .medium-d-block -> Medium
+            p.h5 .large-d-block -> Large
+            p.h5 .elarge-d-block -> Extra Large
+                
+          // End Displays
+        
+          // Start Messages and Alerts
+          
+          a(href="#msg" id="msg" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Messages and Alerts
+          br
+          br
+          div.h2 Messages
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="msg-blue") .msg-blue
+              hr
+              | #{'<div class="msg-blue">.msg-blue</div>'}
+              
+            p.h5 You can cutomize text position (Right-Left-Center)
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="msg-blue txt-right") .txt-right
+                hr
+                | #{'<div class="msg-blue txt-right">.txt-right</div>'}
+                br
+                br
+                | #{'<div class="msg-blue txt-center">.txt-center</div>'}
+                br
+                br
+                | #{'<div class="msg-blue txt-center">.txt-left</div>'}
+                
+            p.h5 You can cutomize bg-color
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="msg-green") .msg-green
+                hr
+                | #{'<div class="msg-green">.msg-green</div>'}
+                br
+                br
+                | .msg-blue / .msg-gray / .msg-red / .msg-green / .msg-yellow / .msg-cyan / .msg-white / .msg-black / .msg-pink / .msg-orange / .msg-purple / .msg-lemon
+          
+          hr
+          div.h2 Alerts
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="alert-blue")
+                button(class="btn btn-blue") X
+                div.title Alert
+                div.content .alert-blue
+              hr
+              | #{'<div class="alert-blue">'}
+              br
+              br
+              | #{'<button class="btn btn-blue">X</button>'}
+              br
+              br
+              | #{'<div class="title">Alert</div>'}
+              br
+              br
+              | #{'<div class="content">.alert-blue</div>'}
+              br
+              br
+              | #{'</div>'}
+              
+            p.h5 You can cutomize bg-color
+              div(class="collapse collapse-b h6" style="display: block;")
+                div(class="alert-green")
+                  button(class="btn btn-green") X
+                  div.title Alert
+                  div.content .alert-green
+                hr
+                | #{'<div class="alert-green">'}
+                br
+                br
+                | .alert-blue / .alert-gray / .alert-red / .alert-green / .alert-yellow / .alert-cyan / .alert-white / .alert-black / .alert-pink / .alert-orange / .alert-purple / .alert-lemon
+                
+          // End Messages and Alerts
+          
+          // Start Badges
+          
+          a(href="#badge" id="badge" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Badges
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div.h2 Hello
+                span(class="badge badge-white") New
+              hr
+              | #{'<h2>Hello<span class="badge badge-white">New</span></h2>'}
+              
+            p.h5 You can cutomize badge color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                div.h2 Hello
+                  span(class="badge badge-black") New
+                hr
+                | #{'<h2>Hello<span class="badge badge-black">New</span></h2>'}
+          
+          // End Badges
+          
+          // Start Breadcrumb
+          
+          a(href="#breadcrumb" id="breadcrumb" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Breadcrumb
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="breadcrumb breadcrumb-white")
+                span.link
+                  a(href="#" class="link-blue") Home
+                span.link
+                  a(href="#" class="link-blue") Link 1
+                span.active Link 2
+              hr
+              | #{'<div class="breadcrumb breadcrumb-white">'}
+              br
+              br
+              | #{'<span class="link">'}
+              br
+              br
+              | #{'<a href="#" class="link-blue">Home</a>'}
+              br
+              br
+              | #{'</span>'}
+              br
+              br
+              | #{'<span class="link">'}
+              br
+              br
+              | #{'<a href="#" class="link-blue">Link 1</a>'}
+              br
+              br
+              | #{'</span>'}
+              br
+              br
+              | #{'<span class="active">Link 2</span>'}
+              br
+              br
+              | #{'</div>'}
+              
+            p.h5 You can cutomize breadcrumb color
+              div(class="collapse collapse-w h6" style="display: block;")
+                div(class="breadcrumb breadcrumb-black")
+                  span.link
+                    a(href="#" class="link-blue") Home
+                  span.link
+                    a(href="#" class="link-blue") Link 1
+                  span.active Link 2
+                hr
+                | #{'<div class="breadcrumb breadcrumb-black">'}
+          
+          // End Breadcrumb
+          
+          // Start Buttons
+          
+          a(href="#btn" id="btn" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Buttons
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              button(class="btn btn-blue") Hello
+              a(href="#" class="btn btn-blue") Hello
+              hr
+              | #{'<button class="btn btn-blue">Hello</button>'}
+              br
+              br
+              | #{'<a href="#" class="btn btn-blue">Hello</a>'}
+              
+            p.h5 You can cutomize button color
+              div(class="collapse collapse-b h6" style="display: block;")
+                button(class="btn btn-blue") .btn-blue
+                button(class="btn btn-gray") .btn-gray
+                button(class="btn btn-green") .btn-green
+                button(class="btn btn-red") .btn-red
+                button(class="btn btn-yellow") .btn-yellow
+                button(class="btn btn-cyan") .btn-cyan
+                button(class="btn btn-white") .btn-white
+                button(class="btn btn-black") .btn-black
+                button(class="btn btn-pink") .btn-pink
+                button(class="btn btn-orange") .btn-orange
+                button(class="btn btn-purple") .btn-purple
+                button(class="btn btn-lemon") .btn-lemon
+                
+            p.h5 You can cutomize button shape
+              div(class="collapse collapse-b h6" style="display: block;")
+                button(class="btn btn-outline-blue") .btn-blue
+                button(class="btn btn-outline-gray") .btn-gray
+                button(class="btn btn-outline-green") .btn-green
+                button(class="btn btn-outline-red") .btn-red
+                button(class="btn btn-outline-yellow") .btn-yellow
+                button(class="btn btn-outline-cyan") .btn-cyan
+                button(class="btn btn-outline-white") .btn-white
+                button(class="btn btn-outline-black") .btn-black
+                button(class="btn btn-outline-pink") .btn-pink
+                button(class="btn btn-outline-orange") .btn-orange
+                button(class="btn btn-outline-purple") .btn-purple
+                button(class="btn btn-outline-lemon") .btn-lemon
+          
+          // End Buttons
+          
+          // Start Button Group
+          
+          a(href="#btngroup" id="btngroup" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Button Group
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div.btn-group
+                button(class="btn btn-gray first") 1
+                button(class="btn btn-gray") 2
+                button(class="btn btn-gray") 3
+                button(class="btn btn-gray last") 4
+              hr
+              | #{'<div class="btn-group">'}
+              br
+              br
+              | #{'<button class="btn btn-gray first">1</button>'}
+              br
+              br
+              | #{'<button class="btn btn-gray">2</button>'}
+              br
+              br
+              | #{'<button class="btn btn-gray">3</button>'}
+              br
+              br
+              | #{'<button class="btn btn-gray last">4</button>'}
+              br
+              br
+              | #{'</div>'}
+          
+          // End Button Group
+          
+          // Start Card
+          
+          a(href="#card" id="card" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Card
+          br
+          br
+          div.h2 Portait
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="card-portait card-portait-w")
+                img(src="http://placehold.it/286x180")
+                div.content
+                  h3 Hello
+                  div.desc This is a portait card
+                br
+                button(class="btn btn-blue") Button
+              hr
+              | #{'<div class="card-portait card-portait-w">'}
+              br
+              br
+              | #{'<img src="http://placehold.it/286x180">'}
+              br
+              br
+              | #{'<div class="content">'}
+              br
+              br
+              | #{'<h3>Hello</h3>'}
+              br
+              br
+              | #{'<div class="desc">This is a portait card</div>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'<br><button class="btn btn-blue">Button</button>'}
+              br
+              br
+              | #{'div>'}
+              
+            p.h5 You can cutomize card color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                div(class="card-portait card-portait-b")
+                  img(src="http://placehold.it/286x180")
+                  div.content
+                    h3 Hello
+                    div.desc This is a portait card
+                  br
+                  button(class="btn btn-blue") Button
+                hr
+                | #{'<div class="card-portait card-portait-b">'}
+          
+          hr
+          div.h2 Landscape
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="card-landscape card-landscape-w")
+                img(src="http://placehold.it/286x180")
+                div(class="content clearfix")
+                  h3 Hello
+                  div.desc This is a landscape card
+                  br
+                  button(class="btn btn-blue") Button
+              hr
+              | #{'<div class="card-landscape card-landscape-w">'}
+              br
+              br
+              | #{'<img src="http://placehold.it/286x180">'}
+              br
+              br
+              | #{'<div class="content clearfix">'}
+              br
+              br
+              | #{'<h3>Hello</h3>'}
+              br
+              br
+              | #{'<div class="desc">This is a portait card</div>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'<br><button class="btn btn-blue">Button</button>'}
+              br
+              br
+              | #{'div>'}
+              
+            p.h5 You can cutomize card color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                div(class="card-landscape card-landscape-b")
+                  img(src="http://placehold.it/286x180")
+                  div.content
+                    h3 Hello
+                    div.desc This is a landscape card
+                  br
+                  button(class="btn btn-blue") Button
+                hr
+                | #{'<div class="card-landscape card-landscape-b">'}
+                
+          // End Card
+          
+          // Start Collapse
+          
+          a(href="#coll" id="coll" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Collapse
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              button(class="btn btn-blue" onclick="collapse('collapse-1');") Show /Hide
+              div(class="collapse collapse-w" data-id="collapse-1") This is white Collapse
+              hr
+              | #{'<button class="btn btn-blue" onclick="collapse(\'collapse-1\')">Show / Hide</button>'}
+              br
+              br
+              | #{'<div class="collapse collapse-b" data-id="collapse-1">This is white Collapse</div>'}
+              
+            p.h5 You can cutomize collapse color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                button(class="btn btn-blue" onclick="collapse('collapse-2');") Show /Hide
+                div(class="collapse collapse-b" data-id="collapse-2") This is black Collapse
+                hr
+                | #{'<div class="collapse collapse-b" data-id="collapse-2">This is black Collapse</div>'}
+          
+          // End Collapse
+          
+          // Start Dropdowns
+          
+          a(href="#dropds" id="dropds" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Dropdowns
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              button(class="btn btn-blue" onclick="dropdown('dropdown-1');") Show /Hide
+              div(class="dropdown dropdown-w")
+                ul(class="dp-links" data-id="dropdown-1")
+                  li(class="dp-link")
+                    a(href="#") Action
+                  li(class="dp-link")
+                    a(href="#") Action
+                  hr
+                  li(class="dp-link")
+                    a(href="#") Action
+              hr
+              | #{'<button class="btn btn-blue" onclick="dropdown(\'dropdown-1\')">Show / Hide</button>'}
+              br
+              br
+              | #{'<div class="dropdown dropdown-w">'}
+              br
+              br
+              | #{'<ul class="dp-links" data-id="dropdown-1">'}
+              br
+              br
+              | #{'<li class="dp-link"><a href="#">Action</a></li>'}
+              br
+              br
+              | #{'<li class="dp-link"><a href="#">Action</a></li>'}
+              br
+              br
+              | #{'<hr>'}
+              br
+              br
+              | #{'<li class="dp-link"><a href="#">Action</a></li>'}
+              br
+              br
+              | #{'</ul>'}
+              br
+              br
+              | #{'</div>'}
+              
+              
+            p.h5 You can cutomize dropdown color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                button(class="btn btn-blue" onclick="dropdown('dropdown-2');") Show /Hide
+                div(class="dropdown dropdown-b")
+                  ul(class="dp-links" data-id="dropdown-2")
+                    li(class="dp-link")
+                      a(href="#") Action
+                    li(class="dp-link")
+                      a(href="#") Action
+                    hr
+                    li(class="dp-link")
+                      a(href="#") Action
+                hr
+                | #{'<div class="dropdown dropdown-b">'}
+          
+          // End Dropdowns
+          
+          // Start Forms
+          
+          a(href="#form" id="form" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Forms
+          br
+          br
+          div.h2 Normal Inputs
+            div(class="collapse collapse-b h6" style="display: block;")
+              input(class="input input-w")
+              input(class="input input-b")
+              hr
+              | #{'<input class="input input-w">'}
+              | #{'<input class="input input-b">'}
+              
+          hr
+          div.h2 Textarea
+            div(class="collapse collapse-b h6" style="display: block;")
+              textarea(class="input input-w")
+              textarea(class="input input-b")
+              hr
+              | #{'<textarea class="input input-w"></textarea>'}
+              | #{'<textarea class="input input-b"></textarea>'}
+              
+          hr
+          div.h2 Selects
+            div(class="collapse collapse-b h6" style="display: block;")
+              select(class="select select-w")
+                option(class="s-item") Hello
+                option(class="s-item") Hello
+              hr
+              | #{'<select class="select select-w">'}
+              br
+              br
+              | #{'<option class="s-item">Hello</option>'}
+              br
+              br
+              | #{'<option class="s-item">Hello</option>'}
+              br
+              br
+              | #{'</select>'}
+              
+            p.h5 You can cutomize select color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                select(class="select select-b")
+                  option(class="s-item") Hello
+                  option(class="s-item") Hello
+                hr
+                | #{'<select class="select select-b">'}
+                
+          // End Forms
+          
+          // Start Input Group
+          
+          a(href="#igroup" id="igroup" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Input Group
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="input-group i-group-w i-group-left")
+                input(class="input input-w")
+                label(class="label-w") .com
+              br
+              div(class="input-group i-group-b i-group-left")
+                input(class="input input-b")
+                label(class="label-b") .com
+              hr
+              | #{'<div class="input-group i-group-w i-group-left">'}
+              br
+              br
+              | #{'<input class="input input-w">'}
+              br
+              br
+              | #{'<label class="label-w">.com</label>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'<div class="input-group i-group-b i-group-left">'}
+              br
+              br
+              | #{'<input class="input input-b">'}
+              br
+              br
+              | #{'<label class="label-b">.com</label>'}
+              br
+              br
+              | #{'</div>'}
+              
+              
+            p.h5 You can cutomize label position (Right, Left)
+              div(class="collapse collapse-w h6" style="display: block;")
+                div(class="input-group i-group-w i-group-right")
+                  label(class="label-w") Welcome
+                  input(class="input input-w")
+                br
+                div(class="input-group i-group-b i-group-right")
+                  label(class="label-b") Welcome
+                  input(class="input input-b")
+                hr
+                | #{'<div class="input-group i-group-w i-group-right">'}
+                br
+                br
+                | #{'<label class="label-w">.com</label>'}
+                br
+                br
+                | #{'<input class="input input-w">'}
+                br
+                br
+                | #{'</div>'}
+                br
+                br
+                | #{'<div class="input-group i-group-b i-group-right">'}
+                br
+                br
+                | #{'<label class="label-b">.com</label>'}
+                br
+                br
+                | #{'<input class="input input-b">'}
+                br
+                br
+                | #{'</div>'}
+          
+          // End Input Group
+          
+          // Start Posts And Articles
+          
+          a(href="#post" id="post" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Posts And Articles
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div(class="post-n post-n-w")
+                div(class="h1 title") Title
+                div.desc Description
+                hr
+                div.content Content .... Add Here some text
+              hr
+              | #{'<div class="post-n post-n-w">'}
+              br
+              br
+              | #{'<div class="h1 title">Title</div>'}
+              br
+              br
+              | #{'<div class="desc">Description</div>'}
+              br
+              br
+              | #{'<hr>'}
+              br
+              br
+              | #{'<div class="content">Content .... Add Here some text</div>'}
+              br
+              br
+              | #{'</div>'}
+              
+            p.h5 You can cutomize post color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                div(class="post-n post-n-b")
+                  div(class="h1 title") Title
+                  div.desc Description
+                  hr
+                  div.content Content .... Add Here some text
+                hr
+                | #{'<div class="post-n post-n-b">'}
+          
+          // End Posts And Articles
+          
+          // Start Navbar
+          
+          a(href="#nav" id="nav" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Navbar
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              nav(class="navbar navbar-w")
+                button(class="btn btn-gray col-button" onclick="navdp('nav2');") +
+                div(class="brand h1") Brand Name
+                div(class="navcontent" data-id="nav2")
+                  ul.links
+                    li.active
+                      a(href="#") Home
+                    li.link
+                      a(href="#") Link
+                    li.navdropdown
+                      a(onclick="dropdown('navdropdown-2');") Dropdown
+                      ul(class="dp-links" data-id="navdropdown-2")
+                        li.dp-link
+                          a(href="#") Link
+                        li.dp-link
+                          a(href="#") Link
+                  div.search
+                    input(class="input input-w")
+                    button(class="btn btn-outline-green") Search
+                  div.otherside
+                    ul.links
+                      li.link
+                        a(href="#") Link
+                  div.clearfix
+              hr
+              | #{'<nav class="navbar navbar-w">'}
+              br
+              br
+              | #{'<button class="btn btn-gray col-button" onclick="navdp(\'nav1\');">+</button>'}
+              br
+              br
+              | #{'<div class="brand h1">Brand Name</div>'}
+              br
+              br
+              | #{'<div class="navcontent" data-id="nav2">'}
+              br
+              br
+              | #{'<ul class="links">'}
+              br
+              br
+              | #{'<li class="active"><a href="#">Home</a></li>'}
+              br
+              br
+              | #{'<li class="link"><a href="#">Link</a></li>'}
+              br
+              br
+              | #{'<li class="dropdown">'}
+              br
+              br
+              | #{'<a onclick="dropdown(\'navdropdown-2\');">Dropdown</a>'}
+              br
+              br
+              | #{'<ul class="dp-links" data-id="navdropdown-2">'}
+              br
+              br
+              | #{'<li class="dp-link"><a href="#">Link</a></li>'}
+              br
+              br
+              | #{'<li class="dp-link"><a href="#">Link</a></li>'}
+              br
+              br
+              | #{'</ul>'}
+              br
+              br
+              | #{'</li>'}
+              br
+              br
+              | #{'</ul>'}
+              br
+              br
+              | #{'<div class="search">'}
+              br
+              br
+              | #{'<input class="input input-w">'}
+              br
+              br
+              | #{'<button class="btn btn-outline-green">Search</button>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'<div class="otherside">'}
+              br
+              br
+              | #{'<ul class="links">'}
+              br
+              br
+              | #{'<li class="link"><a href="#">Link</a></li>'}
+              br
+              br
+              | #{'</ul>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'</div>'}
+              br
+              br
+              | #{'<div class="clearfix"></div>'}
+              br
+              br
+              | #{'</nav>'}
+              
+            p.h5 You can cutomize navbar color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                nav(class="navbar navbar-b")
+                  button(class="btn btn-gray col-button" onclick="navdp('nav2');") +
+                  div(class="brand h1") Brand Name
+                  div(class="navcontent" data-id="nav2")
+                    ul.links
+                      li.active
+                        a(href="#") Home
+                      li.link
+                        a(href="#") Link
+                      li.navdropdown
+                        a(onclick="dropdown('navdropdown-2');") Dropdown
+                        ul(class="dp-links" data-id="navdropdown-2")
+                          li.dp-link
+                            a(href="#") Link
+                          li.dp-link
+                            a(href="#") Link
+                    div.search
+                      input(class="input input-w")
+                      button(class="btn btn-outline-green") Search
+                    div.otherside
+                      ul.links
+                        li.link
+                          a(href="#") Link
+                    div.clearfix
+                hr
+                | #{'<nav class="navbar navbar-b">'}
+          
+          // End Navbar
+          
+          // Start Pagination
+          
+          a(href="#pagination" id="pagination" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Pagination
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              div.btn-group
+                button(class="btn btn-blue first") Prev
+                button(class="btn btn-blue") 1
+                button(class="btn btn-gray") 2
+                button(class="btn btn-blue") 3
+                button(class="btn btn-blue") 4
+                button(class="btn btn-blue last") Next
+              hr
+              | #{'<div class="btn-group">'}
+              br
+              br
+              | #{'<button class="btn btn-blue first">Prev</button>'}
+              br
+              br
+              | #{'<button class="btn btn-blue">1</button>'}
+              br
+              br
+              | #{'<button class="btn btn-gray">2</button>'}
+              br
+              br
+              | #{'<button class="btn btn-blue">3</button>'}
+              br
+              br
+              | #{'<button class="btn btn-blue">4</button>'}
+              br
+              br
+              | #{'<button class="btn btn-blue last">Next</button>'}
+              br
+              br
+              | #{'</div>'}
+          
+          // End Pagination
+          
+          // Start Tip
+          
+          a(href="#tip" id="tip" class="link-blue" style="font-size: 30px; margin-bottom: 20px;") Tip
+          br
+          br
+          div.h2
+            div(class="collapse collapse-b h6" style="display: block;")
+              button(class="btn btn-blue has-tip") Touch me
+                span(class="tip tip-w") Tip
+              hr
+              | #{'<button class="btn btn-blue has-tip">Touch me'}
+              br
+              br
+              | #{'<span class="tip tip-w">Tip</span></button>'}
+              
+            p.h5 You can cutomize tip color (Black, White)
+              div(class="collapse collapse-w h6" style="display: block;")
+                button(class="btn btn-blue has-tip") Touch me
+                  span(class="tip tip-b") Tip
+                hr
+                | #{'<button class="btn btn-blue has-tip">Touch me'}
+                br
+                br
+                | #{'<span class="tip tip-b">Tip</span></button>'}
+          
+          // End Tip
+        
+    include layout/footer.pug

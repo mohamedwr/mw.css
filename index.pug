@@ -1,0 +1,77 @@
+doctype
+html
+  head
+    include layout/head.pug
+    title MW.CSS | Home
+  body
+    - var active = 'home'
+      
+    include layout/navbar.pug
+    
+    div(class="main collapse collapse-w margin-1 space-22" style="display: block; margin-bottom: 20px;")
+      img(src="images/logo.png" width="150" height="150" style="float: right;")
+      img(src="images/logo.png" width="150" height="150")
+      div(class="txt-green txt-center clearfix" style="font-size: 35px; margin-bottom: 20px;")
+        | MW.CSS v1.0 Beta
+      div(class="txt-center h2")
+        i(class="fas fa-object-group h2")
+        br
+        | Responsive
+        p.h5 Build reponsive websites with MW.CSS
+      
+      div(class="feats txt-center")
+        div(class="txt-blue"  style="font-size: 35px; margin-bottom: 30px;") Features
+        div(class="space-5 space-medium-11 space-small-22 space-esmall-22 margin-esmall-1 margin-small-1 margin-esmall-1 h2")
+          i(class="fa fa-money-bill-wave h2")
+          br
+          | Free
+          p.h5 With MW.CSS you can make a responsive website for free with out any need to pay
+          
+        div(class="space-5 space-medium-11 space-small-22 space-esmall-22 margin-1 h2")
+          i(class="fa fa-lock-open h2")
+          br
+          | Open Source
+          p.h5 With MW.CSS you can download framework source and edit it and upload it to us or use it
+          
+        div(class="space-5 space-medium-11 space-small-22 space-esmall-22 margin-small-1 margin-esmall-1 margin-large-1 margin-elarge-1 h2")
+          i(class="fab fa-sass h2")
+          br
+          | Built with SCSS
+          p.h5 MW.CSS built with an easy pre-proccessor so you can edit it easily
+          
+        div(class="space-5 space-medium-11 space-small-22 space-esmall-22 margin-1 h2")
+          i(class="fas fa-flag-checkered h2")
+          br
+          | Fast Updates
+          p.h5 We update MW.CSS as fast as we can so do not worry about bugs just report and we will fix it
+        div.clearfix
+        
+      div(class="download txt-center" style="margin-bottom: 20px;")
+        div(class="txt-blue"  style="font-size: 35px; margin-bottom: 30px;") Downloads
+        p.h4 Current Version: MW.CSS v1.0 Beta
+        
+        div(class="space-22 margin-1 space-large-11 space-elarge-11" style="margin-bottom: 20px;")
+          p.h3 Download Normal Css files for regular users
+          a(class="btn btn-green" href="downloads/CSS.zip") CSS Files
+          div.clearfix
+        
+        div(class="space-22 margin-1 space-large-11 space-elarge-11" style="margin-bottom: 20px;")
+          p.h3 Download Scss Files for developers
+          a(class="btn btn-green" href="downloads/SCSS.zip") SCSS Files
+          div.clearfix
+          
+      div(class="g-started txt-center" style="margin-bottom: 20px;")
+        div(class="txt-blue"  style="font-size: 35px; margin-bottom: 30px;") Getting Started
+        
+        p.h3 First of all place #{'<link>'} to use MW.CSS
+        div(class="collapse collapse-b txt-left" style="display: block;") #{'<link rel="stylesheet" href="css/mw.css">'}
+        
+        p.h3 Then you have to use jquery because some components needs js plugins
+        div(class="collapse collapse-b txt-left" style="display: block;") #{'<script src="js/jquery.js"></script>'}
+        
+        p.h3 Finally you have to use mw.js to make plugins work
+        div(class="collapse collapse-b txt-left" style="display: block;") #{'<script src="js/mw.js"></script>'}
+          
+      div.clearfix
+    
+    include layout/footer.pug

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="MW.CSS Oficial Website... MW is a free css framework and easy to use...">
+    <meta name="keywords" content="HTML,CSS,MW,.CSS,Bootstrap,PUGjs">
+    <meta name="author" content="Mohammed Waleed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/mw.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>MW.CSS | About us</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-b" style="margin-bottom: 20px;">
+      <button class="btn btn-gray col-button" onclick="navdp('nav1');">+</button>
+      <div class="brand"><img src="images/logo.png" width="50" height="50" style="float: left;"><span class="clearfix"></span>MW.CSS</div>
+      <div class="navcontent" data-id="nav1">
+        <ul class="links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li id="news"><a href="news.php">News</a></li>
+          <li class="navdropdown"><a href="#" onclick="dropdown('navdropdown-2');">Documentation</a>
+            <ul class="dp-links" data-id="navdropdown-2">
+              <li class="dp-link"><a href="doc.html">Documentation</a></li>
+              <li class="dp-link"><a href="doc.html#colors">Colors</a></li>
+              <li class="dp-link"><a href="doc.html#grid">Grid System</a></li>
+              <li class="dp-link"><a href="doc.html#displays">Displays</a></li>
+              <li class="dp-link"><a href="doc.html#msg">Msg and Alerts</a></li>
+              <li class="dp-link"><a href="doc.html#badge">Badges</a></li>
+              <li class="dp-link"><a href="doc.html#breadcrumb">Breadcrumb</a></li>
+              <li class="dp-link"><a href="doc.html#btn">Buttons</a></li>
+              <li class="dp-link"><a href="doc.html#btngroup">Button Group</a></li>
+              <li class="dp-link"><a href="doc.html#card">Card</a></li>
+              <li class="dp-link"><a href="doc.html#coll">Collapse</a></li>
+              <li class="dp-link"><a href="doc.html#dropds">Dropdowns</a></li>
+              <li class="dp-link"><a href="doc.html#form">Forms</a></li>
+              <li class="dp-link"><a href="doc.html#igroup">Input Group</a></li>
+              <li class="dp-link"><a href="doc.html#post">Posts And Articles</a></li>
+              <li class="dp-link"><a href="doc.html#nav">Navbar</a></li>
+              <li class="dp-link"><a href="doc.html#pagination">Pagination</a></li>
+              <li class="dp-link"><a href="doc.html#tip">Tip</a></li>
+            </ul>
+          </li>
+          <li id="news"><a href="report.html#vote">Vote</a></li>
+          <li class="link"><a href="report.html">Report</a></li>
+          <li class="active"><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </nav>
+    <div class="main collapse collapse-w margin-1 space-22" style="display: block; margin-bottom: 20px;">
+      <div class="txt-center">
+        <div class="me">
+          <div class="h1">About the developer</div><br><img class="space-esmall-22 margin-esmall-1" src="images/me.jpg">
+          <div class="clearfix"></div>
+          <div class="h4">
+            <p>I am Mohammed Waleed</p>
+            <p>A Front-end and Back-end Developer</p>
+            <p>I am 13 years old</p>
+            <p>I am From Egypt, El-Fayoum</p>
+            <p>I am studying at Future Language School</p>
+          </div>
+        </div><br>
+        <div class="links clearfix h1">Social Media<br><a class="link-blue" href="https://www.facebook.com/mohammed.rady.1293" target="_blank">Facebook</a></div><br>
+        <div class="skills">
+          <div class="h1">Skills</div><br>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-blue txt-white" style="margin-bottom: 10px;">Html</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-gray txt-white" style="margin-bottom: 10px;">Css</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-green txt-white" style="margin-bottom: 10px;">Javascript</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-red txt-white" style="margin-bottom: 10px;">Php</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-cyan txt-white" style="margin-bottom: 10px;">MySql</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-pink txt-white" style="margin-bottom: 10px;">Sass</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-orange txt-white" style="margin-bottom: 10px;">Pugjs</div>
+          <div class="space-5 space-esmall-11 margin-1 h3 bg-purple txt-white" style="margin-bottom: 10px;">C#</div>
+        </div><br>
+        <div class="contact">
+          <div class="h1" id="contact">Contact us</div><br>
+          <form method="post" action="data/contact.php">
+            <div class="left margin-2 space-20">
+              <input class="input input-w space-24" placeholder="Name.." name="name" type="text" required><br>
+              <input class="input input-w space-24" placeholder="Email.." name="email" type="email" required>
+            </div>
+            <div class="right margin-2 space-20">
+              <input class="input input-w space-24" placeholder="Title.." name="title" type="text" required><br>
+              <textarea class="input input-w space-24" placeholder="Message.." name="msg" required style="resize: vertical;"></textarea>
+            </div>
+            <button class="btn btn-outline-green margin-3 space-18" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="clearfix"></div><br><a class="link-blue" href="admin.php">Control</a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <footer class="txt-center txt-white h3" style="margin: 20px;">Made with <i class="fa fa-heart txt-red"></i> By Mohammed Waleed | &copy; 2018 All Rights Reserved</footer>
+    <button class="btn btn-blue" id="go-to-top" style="display: none;"><i class="fas fa-angle-double-up"></i></button>
+    <script src="js/jquery.js"></script>
+    <script src="js/mw.js"></script>
+    <script src="js/plugins.js"></script>
+  </body>
+</html>

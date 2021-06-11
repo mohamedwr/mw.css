@@ -1,0 +1,68 @@
+.input{
+    margin: 10px;
+    border: 1px solid;
+    height: calc(2.25rem + 2px);
+    padding: .1rem .75rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: .25rem;
+}
+
+.input-w{
+    border-color: #ced4da;
+    @extend .bg-white;
+    @extend .txt-black;
+}
+
+.input-b{
+    border-color: #ced4da;
+    @extend .bg-black;
+    @extend .txt-white;
+}
+
+.select{
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    text-align: $left;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: .25rem;
+    list-style: none;
+    .s-item{
+        display: block;
+        width: 100%;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-#{$left}: 2.5px;
+        text-decoration: none;
+    }
+}
+
+.select-w{
+    color: $black;
+    background-color: $white;
+    border-color: rgba(0,0,0,.15);
+    .s-item{
+        @extend .txt-black;
+        &:hover{
+            @extend .txt-white;
+            @extend .bg-blue;
+        }
+    }      
+}
+
+.select-b{
+    color: $white;
+    background-color: $black;
+    border-color: rgba(0,0,0,.15);
+    .s-item{
+        @extend .txt-white;
+        &:hover{
+            @extend .txt-black;
+            @extend .bg-green;
+        }
+    }      
+}

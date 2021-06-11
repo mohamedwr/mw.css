@@ -1,0 +1,17 @@
+.collapse{
+    display: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.collapse-w{
+    @extend .txt-black;
+    @extend .bg-white;
+    border: 1px $gray solid;
+}
+
+.collapse-b{
+    @extend .txt-white;
+    @extend .bg-black;
+    border: 1px $white solid;
+}
