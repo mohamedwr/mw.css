@@ -1,14 +1,24 @@
-/* MW.CSS V1.0 -- By Mohammed Waleed */
+// Start Configuration
 
-$left: left;
+$dir: ltr;
+
 $right: right;
-
+$left: left;
 $rtl: rtl;
 $ltr: ltr;
 
-@if $left == left { *{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; } }
+@if $dir == rtl {
+  $right: left;
+  $left: right;
 
-@if $left == right { *{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; } }
+  $rtl: ltr;
+  $ltr: rtl;
+}
+
+// End Configuration
+
+
+// Start Colors
 
 $blue: #007bff;
 $gray: #6c757d;
@@ -22,7 +32,6 @@ $pink: #c6538c;
 $orange: #F38630;
 $purple: #9B539C;
 $lemon: #B1EB00;
-
 $colors:(blue, $blue),
         (gray, $gray),
         (green, $green),
@@ -36,87 +45,173 @@ $colors:(blue, $blue),
         (purple, $purple),
         (lemon, $lemon);
 
+// End Colors
+
+
+// Start Fonts
+
+$fonts: (ubunto, 'ubunto.ttf'),
+        (tajawal, 'tajawal.ttf'),
+        (sspro, 'SourceSansPro.otf'),
+        (ptsans, 'PTSans.ttf'),
+        (opensans, 'OpenSans.ttf'),
+        (notosans, 'NotoSans.ttf'),
+        (montserrat, 'montserrat.otf'),
+        (lalezar, 'lalezar.ttf'),
+        (germaniaone, 'GermaniaOne.ttf'),
+        (lato 'lato.ttf'),
+        (baloo, 'baloo.ttf'),
+        (cairo, 'cairo.ttf');
+
+@each $name, $font in $fonts{
+
+  @font-face{
+    font-family: $name;
+    src: url('../fonts/#{$font}');
+  }
+
+  .font-#{$name}{
+    font-family: $name;
+  }
+
+}
+
+// End Fonts
+
+
+// Start Headings
+
 $headings:(1, 2em),
           (2, 1.5em),
           (3, 1.17em),
           (4, 1em),
           (5, 0.83em),
           (6, 0.67em);
-
 @each $nu, $size in $headings{
-    .h#{$nu}{
-        font-size: $size;
-    }
+  .h#{$nu}{
+      font-size: $size;
+  }
 }
 
+// End Headings
+
+
+// Start Margins, Paddings
+
+$i: 0;
+
+@while $i <= 250{
+
+  .marg-#{$i}{
+    margin: $i#{'px'};
+  }
+
+  .padd-#{$i}{
+    padding: $i#{'px'};
+  }
+
+  $i: $i + 10;
+}
+
+// End Margins, Paddings
+
+
+// Start Opacity
+
+$i: 0;
+
+@while $i <= 10{
+
+  .opac-#{$i}{
+    @if $i == 10 {
+      opacity: 1;
+    } @else {
+      opacity: #{'0.'}$i;
+    }
+  }
+  $i: $i + 1;
+}
+
+// End Opacity
+
+
+// Start Displays
+
+$displays: (b, block),
+           (i, inline),
+           (i-b, inline-block),
+           (t, table),
+           (n, none);
+
+@each $dname, $dvalue in $displays{
+  .display-#{$dname}{
+    display: $dvalue;
+  }
+}
+
+// End Displays
+
+
+// Start Positions
+
+$positions: (rel, relative),
+            (sti, sticky),
+            (fix, fixed),
+            (abs, absolute);
+
+@each $pname, $pvalue in $positions{
+  .pos-#{$pname}{
+    position: $pvalue;
+  }
+}
+
+// End Positions
+
+
+//Start Main
+
+*{
+  @if $dir == 'ltr'{
+    @extend .font-ubunto;
+  } @else{
+    @extend .font-cairo;
+  }
+}
 body{
-    margin: 0;
+  margin: 0;
+  direction: $dir;
 }
 
 .txt-center{
-    text-align: center;
+  text-align: center;
 }
-
 .txt-left{
-    text-align: left;
+  text-align: $left;
 }
-
 .txt-right{
-    text-align: right;
+  text-align: $right;
 }
 
 .clearfix{
-    clear: both;
+  clear: both;
 }
-
-.container-full{
-    width: 100%;
-    margin: 0;
-}
-
-.container-mini{
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
 .float-right{
-    float: right;
+  float: $right;
 }
-
 .float-left{
-    float: left;
+  float: $left;
 }
 
-@import 'display';
+// End Main
+
+
+//Files
 
 @import 'colors';
 
-@import 'grid';
-
-@import 'msg';
-
-@import 'breadcrumb';
-
 @import 'btn';
 
-@import 'btngroup';
+@import 'inputs';
 
-@import 'card';
-
-@import 'navbar';
-
-@import 'badge';
-
-@import 'post';
-
-@import 'collapse';
-
-@import 'dropdown';
-
-@import 'forms';
-
-@import 'inputgroup';
-
-@import 'tip';
-
-@import 'mediaquery';
+@import 'fbox';
+@import 'lbox';

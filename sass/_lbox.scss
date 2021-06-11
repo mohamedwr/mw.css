@@ -1,0 +1,37 @@
+.links-box{
+
+  padding: 15px 10px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid 0.5px;
+  text-align: $left;
+  direction: $dir;
+
+  .link{
+    float: $left;
+    a{
+      margin: 0 15px;
+    }
+    &:after{
+      content: " / ";
+    }
+  }
+  
+  .current{
+    margin: 0 15px;
+  }
+
+}
+
+.links-box-white{
+  background-color: $white;
+  border-color: $gray;
+  color: $gray;
+}
+
+.links-box-black{
+  background-color: $black;
+  border-color: $gray;
+  color: $white;
+}

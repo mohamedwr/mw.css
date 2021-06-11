@@ -1,0 +1,1 @@
+sass --watch F:\MandH\mohammed\projects\MW.CSS-2\sass:F:\MandH\mohammed\projects\MW.CSS-2\css --style expanded

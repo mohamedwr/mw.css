@@ -1,38 +1,31 @@
-@each $name, $color in $colors {
-    .txt-#{$name} {
-        color: $color;
-    }
-}
+@each $color, $value in $colors{
 
-@each $name, $color in $colors {
-    .link-#{$name} {
-        color: $color;
-        text-decoration: none;
-        font-size: 18px;
-        cursor: pointer;
-        &:hover{
-            text-decoration-color: $color;
-            text-decoration-line: underline;
-        }
-    }
-}
+  .txt-#{$color}{
+    color: $value;
+  }
 
-@each $name, $color in $colors {
-    .bg-#{$name} {
-        background-color: $color;
-    }
-}
+  .bg-#{$color}{
+    background-color: $value;
+  }
 
-@each $name, $color in $colors {
-    .outl-#{$name} {
-        color: $color;
-        border: 3px solid $color;
+  .link-#{$color}{
+    color: $value;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+      text-decoration-color: $value;
+      text-decoration-line: underline;
     }
-}
+  }
 
-@each $name, $color in $colors {
-    .all-#{$name} {
-        background-color: $color;
-        border: 3px solid $color;
-    }
+  .outl-#{$color}{
+    border: 3px solid $value;
+    color: $value;
+  }
+
+  .all-#{$color}{
+    background-color: $value;
+    border: 3px solid $value;
+  }
+
 }
