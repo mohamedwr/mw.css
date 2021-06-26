@@ -22,4 +22,4 @@ Consider Having Latest Stable Versions of PHP and MySQL
 * [Fontawesome](https://fontawesome.com) under MIT License
 
 ## LICENSE
-The Project is under MIT License, Consider Checking LICENSE.md File
+The Project is under MIT License, Consider Checking LICENSE File
