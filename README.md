@@ -5,11 +5,11 @@ The Project was made in 2018 and Closed from then
 a Simple Css Framework made with Scss
 
 ## Technologies Used
-* PugJs
-* Scss
+* [PugJS](https://pugjs.org) under MIT License
+* [Scss](https://sass-lang.com) under MIT License
 * JavaScript
-* PHP
-* MySQL
+* [PHP](https://php.net)
+* [MySQL](https://mysql.com)
 
 ## Installation
 Open data/connect.php File and Edit the Database Connection Data  
