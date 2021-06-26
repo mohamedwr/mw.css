@@ -14,3 +14,7 @@ Was working on Version 2 before Closing the Project
 * [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro) OFL
 * [Tajawal](https://fonts.google.com/specimen/Tajawal) OFL
 * [Ubuntu](https://fonts.google.com/specimen/Ubuntu) [Ubuntu Font Licence](https://ubuntu.com/legal/font-licence)
+
+
+## LICENSE
+The Project is under MIT License, Consider Checking LICENSE File
